@@ -1,0 +1,139 @@
+body {
+  font-family: "Prompt", sans-serif;
+}
+
+.card {
+  margin: 0 auto;
+  background-color: rgba(241, 211, 179, 0.5);
+  color: #8b7e74;
+}
+
+.form-control {
+  background-color: rgba(241, 211, 179, 0.5);
+  border-color: #65647c;
+}
+
+.form-control:focus {
+  border-color: #65647c;
+  background-color: #8b7e74;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(101, 100, 124, 0.25);
+}
+
+.btn {
+  border-color: #65647c;
+}
+
+.btn:hover {
+  background-color: #65647c;
+  border-color: #65647c;
+}
+
+.btn-dark {
+  display: block;
+  background-color: #65647c;
+  border-color: #65647c;
+  margin-left: auto;
+}
+
+.btn-dark:hover {
+  background-color: transparent;
+  border-color: #65647c;
+  color: #212529;
+}
+
+.date {
+  text-align: right;
+}
+
+.time {
+  color: #c7bca1;
+  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.today-text {
+  text-align: center;
+  text-shadow: 0 0 0.25rem rgba(101, 100, 124, 0.7);
+}
+
+.weather {
+  color: #c7bca1;
+  font-size: 1.5rem;
+  width: fit-content;
+  margin: 0 auto;
+  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.temperature {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #65647c;
+  width: fit-content;
+  margin: 0 0 0 auto;
+  text-shadow: 0 0 0.25rem rgba(101, 100, 124, 0.7);
+}
+
+.button-wrapper {
+  width: fit-content;
+  margin: auto;
+  padding: 0;
+}
+
+.type {
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  color: #65647c;
+  text-shadow: 0 0 0.25rem rgba(101, 100, 124, 0.7);
+  transition: all 300ms ease-in-out;
+}
+
+.type:hover {
+  color: #146c94;
+}
+
+.separator {
+  color: #65647c;
+  font-size: 2rem;
+  text-shadow: 0 0 0.25rem rgba(101, 100, 124, 0.7);
+}
+
+.fa-sharp {
+  color: #c7bca1;
+}
+
+.item {
+  text-align: center;
+  background-color: transparent;
+  color: #8b7e74;
+}
+
+.weather-icon {
+  font-size: 4rem;
+  border-radius: 50%;
+  border: 4px solid #146c94;
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 0 auto 1rem;
+}
+
+.item-temperature {
+  font-size: 1.7rem;
+  color: #146c94;
+  text-shadow: 0 0 0.25rem rgba(101, 100, 124, 0.7);
+}
+
+.big-icon {
+  font-size: 9rem;
+  margin: 0 auto;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.info-value {
+  color: #146c94;
+  text-shadow: 0 0 0.25rem rgba(101, 100, 124, 0.7);
+}
