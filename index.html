@@ -34,20 +34,25 @@
               <div class="col">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control input"
                   placeholder="Enter your city"
                   id="text-input"
+                  autocomplete="off"
                 />
               </div>
               <div class="col">
                 <input
                   type="submit"
-                  class="btn btn-outline-dark"
+                  class="btn btn-outline-dark submit-btn"
                   value="Search"
                 />
               </div>
               <div class="col">
-                <button type="button" class="btn btn-dark" id="current-btn">
+                <button
+                  type="button"
+                  class="btn btn-dark btn-current"
+                  id="current-btn"
+                >
                   Current 📍
                 </button>
               </div>
@@ -72,7 +77,9 @@
             <div class="col">
               <h1 class="mb-2 today-text">Today's Report</h1>
               <div class="wrapper">
-                <p class="mb-2 weather" id="description">It's sunny</p>
+                <p class="mb-2 weather" id="description" class="description">
+                  It's sunny
+                </p>
                 <div class="row">
                   <div class="col">
                     <p class="temperature" id="temperature">25</p>
@@ -95,7 +102,13 @@
               </div>
             </div>
             <div class="col">
-              <p class="big-icon">🌤️</p>
+              <img
+                src="src/images/icon-sun.png"
+                alt="weather icon"
+                id="icon"
+                class="big-icon"
+              />
+
               <div class="row">
                 <div class="col">
                   <p class="info">
@@ -110,8 +123,8 @@
                 </div>
                 <div class="col">
                   <p class="info">
-                    Cloudiness:
-                    <span class="info-value" id="cloudiness">100%</span>
+                    Pressure:
+                    <span class="info-value" id="pressure">1000 Gpa</span>
                   </p>
                 </div>
               </div>

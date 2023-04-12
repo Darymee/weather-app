@@ -9,35 +9,37 @@ body {
   width: fit-content;
 }
 
-.form-control {
+.input {
   background-color: rgba(241, 211, 179, 0.5);
   border-color: #65647c;
 }
 
-.form-control:focus {
+.input:focus {
   border-color: #65647c;
   background-color: #8b7e74;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(101, 100, 124, 0.25);
 }
 
-.btn {
+.submit-btn {
   border-color: #65647c;
 }
 
-.btn:hover {
+.submit-btn:hover,
+.submit-btn:active {
   background-color: #65647c;
   border-color: #65647c;
 }
 
-.btn-dark {
+.btn-current {
   display: block;
   background-color: #65647c;
   border-color: #65647c;
   margin-left: auto;
 }
 
-.btn-dark:hover {
+.btn-current:hover,
+.btn-current:active {
   background-color: transparent;
   border-color: #65647c;
   color: #212529;
@@ -72,6 +74,10 @@ body {
   width: fit-content;
   margin: 0 0 0 auto;
   text-shadow: 0 0 0.25rem rgba(101, 100, 124, 0.7);
+}
+
+.description:first-letter {
+  text-transform: capitalize;
 }
 
 .button-wrapper {
@@ -133,10 +139,9 @@ body {
 }
 
 .big-icon {
-  font-size: 6rem;
+  display: block;
   margin: 0 auto;
-  width: fit-content;
-  margin: 0 auto;
+  width: 100px;
 }
 
 .info {
@@ -146,4 +151,16 @@ body {
 .info-value {
   color: #146c94;
   text-shadow: 0 0 0.25rem rgba(101, 100, 124, 0.7);
+}
+
+button.checked {
+  cursor: default;
+  color: #c7bca1;
+  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+button.checked:hover {
+  cursor: default;
+  color: #c7bca1;
+  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
 }
