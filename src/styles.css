@@ -6,6 +6,7 @@ body {
   margin: 0 auto;
   background-color: rgba(241, 211, 179, 0.5);
   color: #8b7e74;
+  width: fit-content;
 }
 
 .form-control {
@@ -120,17 +121,26 @@ body {
   margin: 0 auto 1rem;
 }
 
+.day {
+  margin: 0;
+}
+
 .item-temperature {
+  margin: 0;
   font-size: 1.7rem;
   color: #146c94;
   text-shadow: 0 0 0.25rem rgba(101, 100, 124, 0.7);
 }
 
 .big-icon {
-  font-size: 9rem;
+  font-size: 6rem;
   margin: 0 auto;
   width: fit-content;
   margin: 0 auto;
+}
+
+.info {
+  text-align: center;
 }
 
 .info-value {
