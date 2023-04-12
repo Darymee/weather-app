@@ -76,7 +76,7 @@ body {
   text-shadow: 0 0 0.25rem rgba(101, 100, 124, 0.7);
 }
 
-.description:first-letter {
+.description::first-letter {
   text-transform: capitalize;
 }
 
