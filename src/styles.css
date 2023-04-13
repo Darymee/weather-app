@@ -128,13 +128,11 @@ body {
   color: #8b7e74;
 }
 
-.weather-icon {
-  font-size: 4rem;
+.item-icon {
+  display: block;
+  margin: 0 auto;
   border-radius: 50%;
-  border: 4px solid #146c94;
-  width: fit-content;
-  padding: 10px 20px;
-  margin: 0 auto 1rem;
+  border: 3px solid #146c94;
 }
 
 .day {
@@ -182,6 +180,7 @@ button.checked:hover {
   color: #8b7e74;
   padding-left: 3rem;
   transition: all 350ms ease-in-out;
+  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
 }
 
 .github-link:hover {

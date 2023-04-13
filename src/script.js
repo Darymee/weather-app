@@ -51,8 +51,31 @@ function changeTemperature(temperature) {
   temperatureUI.innerHTML = temperature;
 }
 
+function getForecast(response) {
+  let data = response.data.daily;
+
+  let forecastUI = document.querySelector("#forecast-list");
+  let forecastTemplate = "";
+
+  data.forEach((day, index) => {
+    if (index < 5) {
+      forecastTemplate =
+        forecastTemplate +
+        `<li class="list-group-item item col border-0">
+    <img class="item-icon" src="${day.condition.icon_url}" alt="${
+          day.condition.description
+        }"  />
+              <p class="day">${formatTime(day.time).day}</p>
+              <p class="item-temperature">${Math.round(
+                day.temperature.day
+              )}°</p>
+            </li>`;
+    }
+  });
+  forecastUI.innerHTML = forecastTemplate;
+}
+
 function getWeather(response) {
-  console.log(response.data);
   let city = response.data.city;
   let countryName = response.data.country;
   let temperature = Math.round(response.data.temperature.current);
@@ -94,7 +117,10 @@ function searchCity(city) {
 
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
+  let forecastApiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+
   axios.get(apiUrl).then(getWeather);
+  axios.get(forecastApiUrl).then(getForecast);
 }
 
 function changeCity(event) {
@@ -169,13 +195,15 @@ btnFahrenheit.addEventListener("click", convertToFahrenheit);
 
 function getCurrentWeather(position) {
   let lat = position.coords.latitude;
-  let long = position.coords.longitude;
+  let lon = position.coords.longitude;
 
   let apiKey = "ft62c1a34b0c40fe3oc6a889fc79e401";
 
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${long}&lat=${lat}&key=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}&units=metric`;
+  let forecastApiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${lon}&lat=${lat}&key=${apiKey}`;
 
   axios.get(apiUrl).then(getWeather);
+  axios.get(forecastApiUrl).then(getForecast);
 }
 
 function getLocation() {
