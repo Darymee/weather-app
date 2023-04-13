@@ -169,3 +169,13 @@ button.checked:hover {
   color: #c7bca1;
   text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
 }
+
+.github-link {
+  color: #8b7e74;
+  padding-left: 3rem;
+  transition: all 350ms ease-in-out;
+}
+
+.github-link:hover {
+  color: #65647c;
+}
