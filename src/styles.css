@@ -171,6 +171,9 @@ button.checked:hover {
 }
 
 .github-link {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
   color: #8b7e74;
   padding-left: 3rem;
   transition: all 350ms ease-in-out;
