@@ -66,9 +66,11 @@ function getForecast(response) {
           day.condition.description
         }"  />
               <p class="day">${formatTime(day.time).day}</p>
-              <p class="item-temperature">${Math.round(
-                day.temperature.day
-              )}°</p>
+              <p class="item-temperature"><span>${Math.round(
+                day.temperature.minimum
+              )}°</span> 📈 <span>${Math.round(
+          day.temperature.maximum
+        )}°</span></p>
             </li>`;
     }
   });
