@@ -4,7 +4,12 @@ body {
 
 .card {
   margin: 0 auto;
-  background-color: rgba(241, 211, 179, 0.5);
+  background: rgba(241, 211, 179, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(241, 211, 179, 0.3);
   color: #8b7e74;
   width: fit-content;
 }
