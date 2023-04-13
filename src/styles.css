@@ -45,8 +45,13 @@ body {
   color: #212529;
 }
 
+.location {
+  font-size: 1.5rem;
+}
+
 .date {
   text-align: right;
+  font-size: 1.5rem;
 }
 
 .time {

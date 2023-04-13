@@ -52,6 +52,7 @@ function changeTemperature(temperature) {
 }
 
 function getWeather(response) {
+  console.log(response.data);
   let city = response.data.city;
   let countryName = response.data.country;
   let temperature = Math.round(response.data.temperature.current);
